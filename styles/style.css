@@ -38,10 +38,9 @@ ol {
 }
 
 .content {
-  max-width: 1140px;
-  margin: 0 auto; 
+  max-height: 534px;
+  padding: 0 30px;
   display: flex;
-  align-items: end;
   gap: 30px;
 }
 
@@ -51,7 +50,6 @@ ol {
 }
 
 .content__list {
-  max-height: 534px;
   overflow: scroll;
   display: flex;
   flex-direction: column;
@@ -65,4 +63,33 @@ ol {
 
 .title {
   margin-bottom: 26px;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* ???????????????????? */
+/* .content__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+} */
+/* ???????????????????? */
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
 }
