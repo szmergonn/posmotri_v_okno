@@ -290,7 +290,7 @@ ol {
   background-color: #545050;
 }
 
-.content__list-itemk:focus {
+.content__list-item:focus-visible {
   outline: 1px solid #fff;
 }
 
