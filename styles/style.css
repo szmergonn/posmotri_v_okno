@@ -244,6 +244,7 @@ ol {
 } 
 
 .button {
+  font-family: inherit;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -262,4 +263,59 @@ ol {
 
 .more-button {
   padding: 6px 137px;
+}
+
+/* Step 6 and 7 starting */
+
+.search-form__label:has(:focus-visible) {
+  display: flex;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.content__list-itemk:focus {
+  outline: 1px solid #fff;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:active {
+  text-decoration: none;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.search-form__textfield:active {
+  outline: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+  outline-offset: 1px;
+  outline: 1px solid #fff;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
