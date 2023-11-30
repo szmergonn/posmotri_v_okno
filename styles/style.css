@@ -207,41 +207,30 @@ ol {
   gap: 15px;
 }
 
-.search-form__label {
-  position: relative;
-  display: flex;
-  flex-direction: row;
+.search-form__pseudo-checkbox {
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
 }
 
-.search-form__pseudo-checkbox {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.search-form__checkbox + .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
-  margin-right: 5px;
-}
-
-.search-form__checkbox {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
+  background-color: transparent;
 }
 
 .search-form__pseudo-checkbox::before {
+  content: '';
   width: 15px;
   height: 15px;
-  background-color: #fff;
-  display: block;
 }
 
-.search-form__checkbox:checked +
-.search-form__pseudo-checkbox::before {
-    content: '';
-} 
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  display: block;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
 
 .button {
   font-family: inherit;
@@ -258,11 +247,11 @@ ol {
 }
 
 .search-form__submit-button {
-  padding: 6px 70px;
+  padding: 6px 73px;
 }
 
 .more-button {
-  padding: 6px 137px;
+  padding: 6px 144px;
 }
 
 /* Step 6 and 7 starting */
