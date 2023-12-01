@@ -141,6 +141,7 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
 }
@@ -290,7 +291,7 @@ ol {
 
 .content__list-item:active {
   background-color: #545050;
-}
+} 
 
 .search-form__textfield:active {
   outline: 1px solid #fff;
@@ -304,4 +305,8 @@ ol {
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
